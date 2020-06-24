@@ -1,0 +1,25 @@
+.contact {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.contact>.item+.item {
+    margin-left: 30px;
+}
+
+.contact a {
+    list-style: none;
+    text-decoration: none;
+    color: $--primary-color;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.header-font {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}

@@ -1,0 +1,22 @@
+%linked {
+    display: block;
+    font-family: $font-family;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+%break {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+%container {
+    width: 1200px;
+    height: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}

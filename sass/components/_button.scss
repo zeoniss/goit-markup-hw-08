@@ -1,0 +1,87 @@
+.button-submit {
+    min-width: 200px;
+    height: 50px;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: white;
+    border-color: $--accent-color;
+    background: $--accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+}
+
+.button-order {
+    display: inline-block;
+    margin: 0;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    text-align: center;
+    min-height: 50px;
+    background-color: $--accent-color;
+    border-color: transparent;
+    color: $--primary-white-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+}
+
+.button-follower {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 0;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    width: 200px;
+    min-height: 50px;
+    background-color: $--accent-color;
+    border-color: transparent;
+    color: $--primary-white-color;
+    margin-bottom: 56px;
+    cursor: pointer;
+}
+
+.button-follower::after {
+    width: 24px;
+    height: 24px;
+    content: '';
+    background-image: url(../images/icon_send.png);
+    background-size: contain;
+    margin-left: 10px;
+}
+
+.button-list {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $--text-title;
+    background-color: #f5f4fa;
+    border-color: transparent;
+    border-radius: 4px;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: $--timing-function;
+    &:hover,
+    &:focus {
+        color: white;
+        background: $--accent-color;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+    }
+}
