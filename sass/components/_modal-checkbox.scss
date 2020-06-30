@@ -1,0 +1,40 @@
+.policy {
+    margin-bottom: 30px;
+    .checkbox-label {
+        position: relative;
+        @extend %inline-flex;
+        .checkbox-input {
+            @extend %visually-hidden;
+        }
+        .policy-link {
+            color: $--accent-color;
+        }
+    }
+}
+
+.checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 2px solid #2a2a2a;
+    border-radius: 4px;
+    .checkbox-input:checked+& {
+        border-color: transparent;
+        background-color: $--accent-color;
+        background-image: url(../images/iconcheck.svg);
+        background-size: contain;
+        background-origin: border-box;
+    }
+}
+
+.checkbox-text {
+    @include transition(transform);
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
+    .checkbox-input:checked~& {
+        transform: translateX(5px);
+    }
+}

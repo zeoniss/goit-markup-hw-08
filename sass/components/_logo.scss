@@ -1,0 +1,17 @@
+.logo {
+    display: inline-block;
+    color: $acent-color;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1;
+    text-decoration: none;
+    .top-studio {
+        color: $title-text-color;
+    }
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+        font-size: 26px;
+        line-height: 1.2;
+    }
+}

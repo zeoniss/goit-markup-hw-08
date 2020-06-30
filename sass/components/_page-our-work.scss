@@ -1,0 +1,43 @@
+.our-work {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+    @extend %section;
+    .section-title {
+        @extend %section-title;
+    }
+    .work-examples {
+        display: block;
+        overflow: hidden;
+    }
+}
+
+.work-list {
+    @extend %break;
+    display: flex;
+    .title-white {
+        @include font(700, 14px, 1.14, 0.03em);
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        color: $--primary-white-color;
+    }
+}
+
+.work-list .item {
+    width: calc((100%-60px) / 3);
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+    &-cont {
+        position: relative;
+        .text-bgc {
+            @extend %centered-flex;
+            position: absolute;
+            bottom: 0;
+            height: 70px;
+            width: 100%;
+            background-color: rgba(47, 48, 58, 0.8);
+        }
+    }
+}

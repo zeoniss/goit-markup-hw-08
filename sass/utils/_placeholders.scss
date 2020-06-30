@@ -20,3 +20,61 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+%list-style {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+%link-td-none {
+    text-decoration: none;
+}
+
+%visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+%centered-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%inline-flex {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+%section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: $--title-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+%our-team-title {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+.subscribe {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+    }
+    .subscribe-form {
+        @media screen and (min-width: 1200px) {
+            margin: 0 12px 0 0;
+        }
+        input[type='email'] {
+            width: 100%;
+            padding: 15px 16px;
+            @media screen and (min-width: 450px) and (max-width: 1199px) {
+                width: 450px;
+            }
+            @media screen and (max-width: 1199px) {
+                margin-bottom: 20px;
+            }
+            @media screen and (min-width: 1200px) {
+                width: 358px;
+            }
+            background-color: inherit;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            @include font(400, 16px, 1.25);
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    .footer-button {
+        @extend %break;
+        display: inline-flex;
+        border-radius: 4px;
+        padding: 10px 29px;
+        align-items: center;
+        @include font(700, 16px, 1.87, none);
+        letter-spacing: 0.06em;
+        color: $--primary-white-color;
+        background-color: $--accent-color;
+        .button-icon.delivery {
+            margin-left: 10px;
+        }
+    }
+}

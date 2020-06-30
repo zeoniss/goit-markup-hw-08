@@ -3,15 +3,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
-    height: 581px;
-    background: white;
+    transition: transform 250ms $cubic;
+    padding: 40px;
+    width: 450px;
+    height: 609px;
+    background-color: $primary-white-color;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    transition: transform 250ms $--timing-function;
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.6);
-        transition: transform 250ms $--timing-function;
+        transition: transform 250ms $cubic;
     }
     @media screen and (max-width: 767px) {
         width: calc(100% - 30px);
@@ -25,198 +26,190 @@
     }
 }
 
-.form {
-    padding: 20px;
-    margin: 20px;
-}
-
-.form-icon {
-    position: absolute;
-    display: inline-block;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 16px;
-    margin-right: 8px;
-    transition: fill 250ms $--timing-function;
-}
-
-.form-title {
+.modal .text {
     display: block;
+    padding: 0;
     margin-bottom: 30px;
-    text-align: center;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+}
+
+.modal .form-field {
+    position: relative;
+    margin-bottom: 28px;
+    width: 100%;
+    height: 40px;
 }
 
 .form-input {
     display: block;
+    padding-left: 42px;
     width: 100%;
     height: 40px;
-    padding: 0 0 0 42px;
-    cursor: pointer;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color 250ms $--timing-function;
-    &:focus~.form-label {
-        color: $--accent-color;
-    }
-    &:focus+.form-label,
-    &:not(:placeholder-shown)+.form-label {
-        transform: translate(-23px, -40px);
-    }
-    &:placeholder-shown {
-        background-color: $--primary-white-color;
-    }
-    &:focus~.form-icon,
-    &:not(:placeholder-shown)~.form-icon {
-        fill: $--accent-color;
-    }
-    &:focus,
-    &:not(:placeholder-shown) {
-        border-color: $--accent-color;
-        outline: none;
+    &:focus {
+        border: 1px solid $acent-color;
     }
 }
 
-.form-field {
-    position: relative;
-    margin-bottom: 28px;
-    &:focus-within>.form-icon {
-        color: $--accent-color;
-    }
-    & .form-label {
-        position: absolute;
-        top: 50%;
-        left: 42px;
-        transform: translateY(-50%);
-        color: $--primary-color;
-        transition: transform 250ms linear;
-    }
-}
-
-.form-textarea {
+.form-label {
     position: absolute;
-    top: 12px;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+    transition: transform 250ms $cubic;
+    color: $primary-text-coor;
+    .form-input:focus+&,
+    .form-input:not(:placeholder-shown)+& {
+        transform: translate(-26px, -40px);
+        color: $acent-color;
+    }
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
     left: 16px;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    color: #757575;
-    transition: transform 250ms $--timing-function;
+    transform: translateY(-50%);
+    fill: $title-text-color;
+    width: 18px;
+    height: 18px;
+    .form-input:focus~& {
+        fill: $acent-color;
+    }
 }
 
 .form-coment {
+    position: relative;
+    margin-bottom: 20px;
     width: 100%;
-    resize: none;
-    padding: 12px 0 0 16px;
-    cursor: pointer;
-    white-space: nowrap;
+    height: 120px;
+    color: $primary-text-coor;
+}
+
+.coment-textarea {
+    width: 100%;
+    height: 100%;
+    padding-top: 12px;
+    padding-left: 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color 250ms $--timing-function;
-    &:focus+.form-textarea,
-    &:not(:placeholder-shown)+.form-textarea {
-        transform: translateY(-35px);
-        color: $--accent-color;
-    }
-    &:focus,
-    &:not(:placeholder-shown) {
-        border-color: $--accent-color;
-        outline: none;
+    &:focus {
+        border: 1px solid $acent-color;
     }
 }
 
-.button-submit {
-    height: 50px;
-    padding: 0;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: $--primary-white-color;
-    border-color: $--accent-color;
-    background: $--accent-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: 0;
-}
-
-.modal-button {
+.coment-label {
+    display: block;
     position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    border: 0;
-    border-radius: 50%;
-    background-color: $--primary-white-color;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-    cursor: pointer;
+    top: 12px;
+    left: 16px;
+    transform: translateY(0);
+    transition: transform 250ms $cubic;
+    .coment-textarea:focus+&,
+    .coment-textarea:not(:placeholder-shown)+& {
+        color: $acent-color;
+        transform: translateY(-35px);
+    }
 }
 
-.icon-close {
+.checkbox-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: start;
+    cursor: pointer;
+    @media screen and (max-width: 480px) {
+        white-space: nowrap;
+    }
+}
+
+.checkbox {
+    position: absolute;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    &:checked {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 16px;
+        height: 15px;
+        transform: translateY(-50%);
+        background-image: url(../images/check-blue.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        transition: background-image 250ms $cubic;
+        @media screen and (min-width: 1200px) {
+            left: 12px;
+        }
+    }
+}
+
+.check-text {
+    display: block;
+    color: $primary-text-coor;
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.1px;
+        margin-left: 24px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.7px;
+        margin-left: 36px;
+    }
+}
+
+.check-link>a {
+    display: block;
+    padding-left: 2px;
+    color: $acent-color;
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.1px;
+    }
+}
+
+.check-icon {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.terms-field {
-    width: 100%;
-    text-align: left;
-}
-
-.label-checkbox {
-    display: flex;
-    font-size: 14px;
-    line-height: 1.71;
-    align-items: center;
-    color: $--primary-color;
-    cursor: pointer;
-}
-
-.icon-checkbox {
-    display: inline-block;
-    width: 15px;
+    left: 0px;
+    width: 16px;
     height: 15px;
-    border-radius: 2px;
-    margin-right: 8px;
-    border: 2px solid black;
-    background-color: $--primary-white-color;
-    transition: 250ms $--timing-function;
+    transform: translateY(-50%);
+    .checkbox:checked~& {
+        fill: $acent-color;
+    }
     @media screen and (min-width: 1200px) {
         left: 12px;
     }
 }
 
-.input-checkbox {
+.modal .close {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0px;
-    padding: 0px;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: $background-first;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    &:hover .icon-close,
+    &:focus .icon-close {
+        fill: $acent-color;
+    }
 }
 
-.linked.terms {
-    display: block;
-    margin-left: 5px;
-    color: $--accent-color;
-    text-decoration: underline;
-    text-align: right;
-}
-
-.input-checkbox:checked+.icon-checkbox {
-    background-color: $--accent-color;
-    background-image: url(../images/iconcheck.svg);
-    background-size: cover;
-    border-radius: 2px;
-    border-color: $--accent-color;
+.icon-close {
+    width: 11px;
+    height: 11px;
+    fill: #000000;
 }

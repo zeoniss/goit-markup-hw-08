@@ -1,0 +1,86 @@
+.section-customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.section-customers .section-title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.customers {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: -15px;
+}
+
+.customers .element {
+    display: flex;
+    height: 90px;
+    margin: 15px;
+    @media screen and (max-width: 767px) {
+        width: calc((100% - 4 * 15px) / 2);
+    }
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 6 * 15px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 12 * 15px) / 6);
+    }
+}
+
+.customers .link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $primary-social-color;
+    border-radius: 4px;
+    fill: $primary-social-color;
+    transition: border 250ms $cubic, fill 250ms $cubic;
+    &:hover,
+    &:focus {
+        border: 1px solid $acent-color;
+        fill: $acent-color;
+    }
+}
+
+.icon-logo-1 {
+    width: 44px;
+    height: 49px;
+}
+
+.icon-logo-2 {
+    width: 40px;
+    height: 52px;
+}
+
+.icon-logo-3 {
+    width: 41px;
+    height: 43px;
+}
+
+.icon-logo-4 {
+    width: 80px;
+    height: 42px;
+}
+
+.icon-logo-5 {
+    width: 59px;
+    height: 47px;
+}
+
+.icon-logo-6 {
+    width: 89px;
+    height: 46px;
+}

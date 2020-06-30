@@ -1,0 +1,13 @@
+.page-footer {
+    background-color: $primary-footer-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.foot {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

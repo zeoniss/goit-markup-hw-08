@@ -9,16 +9,16 @@
     }
 }
 
-.menu-mobile {
+.menu-button {
     display: flex;
     margin-left: auto;
     padding: 0;
     border: none;
     background-color: transparent;
-    & .icon-closed {
+    & .icon-close {
         display: none;
     }
-    &.is-open .icon-closed {
+    &.is-open .icon-close {
         display: block;
     }
     &.is-open .icon-menu {
@@ -26,11 +26,11 @@
     }
     &:hover,
     &:focus {
-        fill: $--accent-color;
+        fill: $acent-color;
     }
-    &.is-open:hover .icon-closed,
-    &.is-open:focus .icon-closed {
-        fill: $--accent-color;
+    &.is-open:hover .icon-close,
+    &.is-open:focus .icon-close {
+        fill: $acent-color;
     }
     @media screen and (min-width: 768px) {
         display: none;
@@ -47,7 +47,7 @@
         text-align: center;
         padding-top: 60px;
         padding-bottom: 60px;
-        background-color: $--primary-white-color;
+        background-color: $primary-white-color;
         z-index: 1;
         border-top: 1px solid #ececec;
     }
@@ -70,7 +70,7 @@
         margin-left: 81px;
         margin-right: 84px;
     }
-    .listing {
+    .list {
         display: block;
         position: relative;
         @media screen and (max-width: 767px) {
@@ -81,7 +81,7 @@
     }
 }
 
-.site-nav .listing.item {
+.site-nav .list.item {
     @media screen and (min-width: 768px) {
         &:not(:last-child) {
             margin-right: 50px;
@@ -89,16 +89,16 @@
     }
 }
 
-.site-nav .link-header-font {
-    display: block;
+.site-nav .link {
+    position: relative;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.2;
     width: 100%;
     height: 100%;
     letter-spacing: 0.02em;
-    color: $--text-title;
-    transition: color 250ms $--timing-function;
+    color: $title-text-color;
+    transition: color 250ms $cubic;
     @media screen and (min-width: 768px) {
         padding-top: 32px;
         padding-bottom: 32px;
@@ -107,29 +107,29 @@
     }
     &:hover,
     &:focus {
-        color: $--accent-color;
+        color: $acent-color;
     }
 }
 
-.site-nav .link-header-font.current {
-    color: $--accent-color;
+.site-nav .link.current {
+    color: $acent-color;
     &::after {
         content: '';
-        display: block;
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
         height: 4px;
-        background-color: $--accent-color;
+        background-color: $acent-color;
         border-radius: 2px;
     }
     @media screen and (max-width: 767px) {
         padding-bottom: 12px;
     }
+    @media screen and (min-width: 768px) {}
 }
 
-.font-header .auth-nav {
+.page-header .contact {
     display: block;
     justify-content: center;
     padding: 0;
@@ -146,7 +146,7 @@
     }
 }
 
-.auth-nav .listing:not(:last-child) {
+.contact .list:not(:last-child) {
     @media screen and (max-width: 767px) {
         margin-bottom: 16px;
     }
@@ -155,28 +155,34 @@
     }
 }
 
-.auth-nav .link-header-font {
+.contact .link {
     display: inline-block;
     width: 100%;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    color: $--primary-color;
-    fill: $--primary-color;
-    transition: color 250ms $--timing-function, fill 250ms $--timing-function;
+    color: $primary-text-coor;
+    fill: $primary-text-coor;
+    transition: color 250ms $cubic, fill 250ms $cubic;
     &:hover,
     &:focus {
-        color: $--accent-color;
-        fill: $--accent-color;
+        color: $acent-color;
+        fill: $acent-color;
     }
     @media screen and (min-width: 1200px) {
         font-size: 14px;
     }
 }
 
-.mark {
+.icon-post {
     width: 16px;
     height: 11px;
+    margin-right: 10px;
+}
+
+.icon-phone {
+    width: 10px;
+    height: 15px;
     margin-right: 10px;
 }

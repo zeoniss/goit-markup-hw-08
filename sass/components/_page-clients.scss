@@ -1,0 +1,68 @@
+.clients {
+    @extend %section;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    .section-title {
+        @extend %section-title;
+    }
+}
+
+.clients-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.companies {
+    display: flex;
+    .button-icon {
+        fill: #afb1b8;
+        @include transition(fill);
+        .clients-item:hover &,
+        .clients-item:focus & {
+            fill: $--accent-color;
+        }
+    }
+}
+
+.clients-item {
+    @media screen and (max-width: 767px) {
+        width: calc((100% - 30px) / 2);
+        &:nth-child(odd) {
+            margin-right: 30px;
+        }
+        &:not(:nth-last-child(-n + 2)) {
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 60px) / 3);
+        &:not(:nth-child(3n)) {
+            margin-right: 30px;
+        }
+        &:not(:nth-last-child(-n + 3)) {
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    @extend %centered-flex;
+    @include transition(border-color);
+    &:hover,
+    &:focus {
+        border-color: $--accent-color;
+        cursor: pointer;
+    }
+}
