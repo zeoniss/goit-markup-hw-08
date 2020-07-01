@@ -10,23 +10,23 @@
     }
 }
 
-.foot-seti {
+.footer-options {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 0;
 }
 
-.foot-seti .list+.list {
+.footer-options .list+.list {
     display: block;
     margin-left: 10px;
 }
 
-.foot-seti>.list {
+.footer-options>.list {
     display: flex;
 }
 
-.foot-seti .link {
+.footer-options .link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,22 +56,22 @@
     }
 }
 
-.foot-seti .icon-instagram {
+.footer-options .icon-instagram {
     width: 44px;
     height: 44px;
 }
 
-.foot-seti .icon-twitter {
+.footer-options .icon-twitter {
     width: 44px;
     height: 44px;
 }
 
-.foot-seti .icon-facebook {
+.footer-options .icon-facebook {
     width: 44px;
     height: 44px;
 }
 
-.foot-seti .icon-linkedin {
+.footer-options .icon-linkedin {
     width: 44px;
     height: 44px;
 }
