@@ -344,13 +344,11 @@ img {
 
 .site-nav .link.current {
   color: #2196f3;
-  width: 16px;
-  height: 11px;
-  margin-right: 10px;
 }
 
 .site-nav .link.current::after {
   content: '';
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -365,7 +363,7 @@ img {
   }
 }
 
-.site-nav .link.current .page-header .contact {
+.page-header .contact {
   display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -375,19 +373,19 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .site-nav .link.current .page-header .contact {
+  .page-header .contact {
     margin-top: 60px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .site-nav .link.current .page-header .contact {
+  .page-header .contact {
     margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .site-nav .link.current .page-header .contact {
+  .page-header .contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -395,17 +393,19 @@ img {
   }
 }
 
-.site-nav .link.current .contact .list:not(:last-child) {
-  margin-right: 30px;
-}
-
 @media screen and (max-width: 767px) {
-  .site-nav .link.current .contact .list:not(:last-child) {
+  .contact .list:not(:last-child) {
     margin-bottom: 16px;
   }
 }
 
-.site-nav .link.current .contact .link {
+@media screen and (min-width: 1200px) {
+  .contact .list:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.contact .link {
   display: inline-block;
   width: 100%;
   font-weight: 500;
@@ -418,15 +418,21 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link.current .contact .link:focus {
+.contact .link:hover, .contact .link:focus {
   color: #2196f3;
   fill: #2196f3;
 }
 
 @media screen and (min-width: 1200px) {
-  .site-nav .link.current .contact .link {
+  .contact .link {
     font-size: 14px;
   }
+}
+
+.icon-post {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
 }
 
 .icon-phone {
