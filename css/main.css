@@ -1289,42 +1289,6 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .foot .left {
-    margin-bottom: 60px;
-    text-align: center;
-  }
-}
-
-.page-footer .logo {
-  display: block;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-}
-
-.bottom-studio {
-  color: #ffffff;
-}
-
-.page-footer .home {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
-.page-footer .link {
-  display: inline-block;
-  margin-top: 9px;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-@media screen and (max-width: 1199px) {
   .foot .center {
     margin-bottom: 60px;
   }
@@ -1424,6 +1388,42 @@ img {
 .footer-options .icon-linkedin {
   width: 44px;
   height: 44px;
+}
+
+@media screen and (max-width: 1199px) {
+  .foot .left {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
+.page-footer .logo {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.bottom-studio {
+  color: #ffffff;
+}
+
+.page-footer .home {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.page-footer .link {
+  display: inline-block;
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @media screen and (max-width: 1199px) {
