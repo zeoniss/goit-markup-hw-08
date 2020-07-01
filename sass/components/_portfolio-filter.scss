@@ -1,7 +1,7 @@
 .section-portfolio {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: $background-first;
+    background-color: $--primary-white-color;
     border-top: 1px solid #ececec;
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -44,12 +44,12 @@
     letter-spacing: 0.03em;
     border: 0;
     border-radius: 4px;
-    background-color: $background-second;
-    color: $title-text-color;
-    transition: background-color 250ms $cubic, color 250ms $cubic;
+    background-color: #f5f4fa;
+    color: $--title-color;
+    transition: background-color 250ms $--timing-function, color 250ms $--timing-function;
     &:hover,
     &:focus {
-        background-color: $acent-color;
-        color: $primary-white-color;
+        background-color: $--accent-color;
+        color: $--primary-white-color;
     }
 }

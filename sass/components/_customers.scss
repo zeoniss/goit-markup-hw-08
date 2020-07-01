@@ -44,14 +44,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid $primary-social-color;
+    border: 1px solid #afb1b8;
     border-radius: 4px;
-    fill: $primary-social-color;
-    transition: border 250ms $cubic, fill 250ms $cubic;
+    fill: #afb1b8;
+    transition: border 250ms $--timing-function, fill 250ms $--timing-function;
     &:hover,
     &:focus {
-        border: 1px solid $acent-color;
-        fill: $acent-color;
+        border: 1px solid $--accent-color;
+        fill: $--accent-color;
     }
 }
 

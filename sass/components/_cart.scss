@@ -43,7 +43,7 @@
         height: 100%;
         background-color: rgba(33, 150, 243, 0.9);
         transform: translateY(+101%);
-        transition: transform 250ms $cubic;
+        transition: transform 250ms $--timing-function;
         .cart .link:hover &,
         .cart .link:focus & {
             transform: translateY(0%);
@@ -66,9 +66,9 @@
     font-size: 18px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: $primary-white-color;
+    color: $--primary-white-color;
     transform: translateY(+120%);
-    transition: transform 250ms $cubic;
+    transition: transform 250ms $--timing-function;
     .cart .link:hover &,
     .cart .link:focus & {
         transform: translateY(0);
@@ -94,7 +94,7 @@
         height: 100%;
         box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
         opacity: 0;
-        transition: opacity 250ms $cubic;
+        transition: opacity 250ms $--timing-function;
     }
 }
 

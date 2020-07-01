@@ -1,7 +1,7 @@
 .section-detail {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: $background-first;
+    background-color: $--primary-white-color;
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 0;
@@ -41,7 +41,7 @@
     justify-content: center;
     margin-bottom: 30px;
     height: 120px;
-    background-color: $background-second;
+    background-color: #f5f4fa;
     border-radius: 4px;
 }
 

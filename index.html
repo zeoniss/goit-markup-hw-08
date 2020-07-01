@@ -19,7 +19,7 @@
           <span class="top-studio">Studio</span>
         </a>
 
-            <button type="button" class="menu-button" aria-controls="menu-container" data-menu-button aria-expanded="false">
+            <button type="button" class="menu-button" aria-controls="menu-container" data-menu-button>
           <svg
             width="40"
             height="40"
@@ -75,68 +75,57 @@
           Заказать услугу
         </button>
 
-            <div class="backdrop is-hidden" data-modal>
+            <div class="backdrop is-hidden" data-backdrop>
                 <div class="modal">
-                    <b class="text">Оставьте свои данные, мы вам перезвоним</b>
-                    <form>
-                        <div class="form-field">
-                            <input class="form-input" type="text" name="name" id="name" placeholder=" " />
-                            <label class="form-label" for="name">Имя</label>
-                            <svg class="form-icon" width="18" height="18">
-                  <use href="./images/form.svg#person"></use>
-                </svg>
-                        </div>
+                    <form class="form" autocomplete="off">
+                        <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
 
                         <div class="form-field">
-                            <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " />
-                            <label class="form-label" for="tel">Телефон</label>
+                            <input type="text" class="form-input" name="data-contacts" id="person" placeholder=" " />
+                            <label for="person" class="form-label">Имя</label>
                             <svg class="form-icon" width="18" height="18">
-                  <use href="./images/form.svg#phone"></use>
-                </svg>
+                      <use href="./images/form.svg#person"></use>
+                    </svg>
                         </div>
 
                         <div class="form-field">
-                            <input class="form-input" type="email" name="mail" id="mail-back" placeholder=" " />
-                            <label class="form-label" for="mail-back">Почта</label>
+                            <input type="tel" class="form-input" name="tel" id="tel" placeholder=" " />
+                            <label for="tel" class="form-label">Телефон</label>
                             <svg class="form-icon" width="18" height="18">
-                  <use href="./images/form.svg#email"></use>
-                </svg>
+                      <use href="./images/form.svg#phone"></use>
+                    </svg>
+                        </div>
+                        <div class="form-field">
+                            <input type="text" class="form-input" name="mail" id="email" placeholder=" " />
+                            <label for="email" class="form-label">Почта</label>
+                            <svg class="form-icon" width="18" height="18">
+                      <use href="./images/form.svg#email"></use>
+                    </svg>
                         </div>
 
-                        <div class="form-coment">
-                            <textarea class="coment-textarea" name="coment" id="coment" placeholder=" "></textarea>
-                            <label class="coment-label" for="coment">Комментарий</label>
+                        <div class="form-field">
+                            <textarea name="data-contacts" id="textarea" rows="6" class="form-coment" placeholder="  "></textarea>
+                            <label for="textarea" class="form-textarea">
+                      Комментарий
+                    </label>
                         </div>
-
-                        <div class="form-check">
-                            <label class="checkbox-label">
-                  <input
-                    class="checkbox"
-                    type="checkbox"
-                    name="agree"
-                    value="agree"
-                  />
-                  <span class="check-text">
-                    Соглашаюсь с рассылкой и принимаю
-                  </span>
-                  <span class="check-link">
-                    <a href="">Условия договора</a>
-                  </span>
-                  <svg class="check-icon" width="16" height="15">
-                    <use href="./images/sprite2.svg#icon-chek-black"></use>
-                  </svg>
-                </label>
+                        <div class="terms-field">
+                            <label class="label-checkbox">
+                      <input type="checkbox" name="checkbox" checked class="input-checkbox" />
+                      <span class="icon-checkbox"></span>
+            
+                      Соглашаюсь с рассылкой и принимаю
+                      <a href="#" class="linked terms">Условия договора</a>
+                    </label>
                         </div>
-
-                        <button class="hero-button send" type="submit">Отправить</button>
+                        <button type="submit" class="button-submit">Отправить</button>
                     </form>
-                    <button class="close" data-modal-close>
-              <svg class="icon-close" width="11" height="11">
-                <use href="./images/form.svg#close"></use>
-              </svg>
-            </button>
+                    <button data-modal-close class="modal-button">
+                  <svg class="icon-close" width="18" height="18">
+                    <use href="./images/form.svg#close"></use>
+                  </svg>
+                </button>
                 </div>
-            </div>
         </section>
 
         <section class="section-detail">
@@ -449,7 +438,7 @@
                     <li class="list element">
                         <a class="link" href="">
                             <svg class="icon-logo-1" aria-label="кампания">
-                  <use href="./images/sprite.svg#icon-logo-1"></use>
+                  <use href="./images/sprite/symbol-defs2.svg#icon-logo1"></use>
                 </svg>
                         </a>
                     </li>
@@ -457,7 +446,7 @@
                     <li class="list element">
                         <a class="link" href="">
                             <svg class="icon-logo-2" aria-label="кампания">
-                  <use href="./images/sprite.svg#icon-logo-2"></use>
+                  <use href="./images/sprite/symbol-defs2.svg#icon-logo2"></use>
                 </svg>
                         </a>
                     </li>
@@ -465,28 +454,28 @@
                     <li class="list element">
                         <a class="link" href="">
                             <svg class="icon-logo-3" aria-label="кампания">
-                  <use href="./images/sprite.svg#icon-logo-3"></use>
+                  <use href="./images/sprite/symbol-defs2.svg#icon-logo3"></use>
                 </svg>
                         </a>
                     </li>
                     <li class="list element">
                         <a class="link" href="">
                             <svg class="icon-logo-4" aria-label="кампания">
-                  <use href="./images/sprite.svg#icon-logo-4"></use>
+                  <use href="./images/sprite/symbol-defs2.svg#icon-logo4"></use>
                 </svg>
                         </a>
                     </li>
                     <li class="list element">
                         <a class="link" href="">
                             <svg class="icon-logo-5" aria-label="кампания">
-                  <use href="./images/sprite.svg#icon-logo-5"></use>
+                  <use href="./images/sprite/symbol-defs2.svg#icon-logo5"></use>
                 </svg>
                         </a>
                     </li>
                     <li class="list element">
                         <a class="link" href="">
                             <svg class="icon-logo-6" aria-label="кампания">
-                  <use href="./images/sprite.svg#icon-logo-6"></use>
+                  <use href="./images/sprite/symbol-defs2.svg#icon-logo6"></use>
                 </svg>
                         </a>
                     </li>
@@ -519,28 +508,36 @@
                     <li class="list">
                         <a class="link" href="">
                             <svg class="icon-instagram" aria-label="инстаграм">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
+                  <use
+                    href="./images/sprite/symbol-defs2.svg#icon-Ellipsei"
+                  ></use>
                 </svg>
                         </a>
                     </li>
                     <li class="list">
                         <a class="link" href="">
                             <svg class="icon-twitter" aria-label="твитер">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
+                  <use
+                    href="./images/sprite/symbol-defs2.svg#icon-Ellipset"
+                  ></use>
                 </svg>
                         </a>
                     </li>
                     <li class="list">
                         <a class="link" href="">
                             <svg class="icon-facebook" aria-label="фейсбук">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
+                  <use
+                    href="./images/sprite/symbol-defs2.svg#icon-Ellipsef"
+                  ></use>
                 </svg>
                         </a>
                     </li>
                     <li class="list">
                         <a class="link" href="">
                             <svg class="icon-linkedin" aria-label="линкедин">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                  <use
+                    href="./images/sprite/symbol-defs2.svg#icon-Ellipsein"
+                  ></use>
                 </svg>
                         </a>
                     </li>
@@ -562,8 +559,20 @@
             </div>
         </div>
     </footer>
-    <script src="js/menu.js"></script>
-    <script src="./js/modal.js"></script>
+    <script>
+        const refs = {
+            openModalBtn: document.querySelector('[data-modal-open]'),
+            closeModalBtn: document.querySelector('[data-modal-close]'),
+            backdrop: document.querySelector('[data-backdrop]'),
+        }
+
+        refs.openModalBtn.addEventListener('click', toggleModal)
+        refs.closeModalBtn.addEventListener('click', toggleModal)
+
+        function toggleModal() {
+            refs.backdrop.classList.toggle('is-hidden')
+        }
+    </script>
 </body>
 
 </html>
