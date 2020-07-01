@@ -1,4 +1,4 @@
-.cart {
+.cards {
     padding-left: 0;
     @media screen and (min-width: 768px) {
         display: flex;
@@ -7,7 +7,7 @@
     }
 }
 
-.cart>.element {
+.cards>.block {
     display: block;
     @media screen and (max-width: 767px) {
         &:not(:last-child) {
@@ -23,7 +23,7 @@
     }
 }
 
-.cart .link {
+.cards .link {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -44,8 +44,8 @@
         background-color: rgba(33, 150, 243, 0.9);
         transform: translateY(+101%);
         transition: transform 250ms $--timing-function;
-        .cart .link:hover &,
-        .cart .link:focus & {
+        .cards .link:hover &,
+        .cards .link:focus & {
             transform: translateY(0%);
         }
     }
@@ -69,13 +69,13 @@
     color: $--primary-white-color;
     transform: translateY(+120%);
     transition: transform 250ms $--timing-function;
-    .cart .link:hover &,
-    .cart .link:focus & {
+    .cards .link:hover &,
+    .cards .link:focus & {
         transform: translateY(0);
     }
 }
 
-.cart .content {
+.cards .content {
     flex-grow: 1;
     position: relative;
     padding-top: 20px;
@@ -98,8 +98,8 @@
     }
 }
 
-.cart .link:hover .content::after,
-.cart .linc:focus .content::after {
+.cards .link:hover .content::after,
+.cards .linc:focus .content::after {
     opacity: 1;
 }
 
