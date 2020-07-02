@@ -886,7 +886,7 @@ img {
   }
 }
 
-.box-detail {
+.about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -903,23 +903,23 @@ img {
 }
 
 .icon-antena {
-  width: 65px;
-  height: 70px;
+  width: 64px;
+  height: 71px;
 }
 
 .icon-clock {
-  width: 67px;
-  height: 70px;
+  width: 66px;
+  height: 71px;
 }
 
 .icon-diagram {
-  width: 70px;
-  height: 54px;
+  width: 69px;
+  height: 55px;
 }
 
 .icon-astronaut {
-  width: 55px;
-  height: 61px;
+  width: 56px;
+  height: 60px;
 }
 
 .section-detail .section-title {
