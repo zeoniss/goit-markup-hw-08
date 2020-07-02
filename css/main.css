@@ -188,62 +188,30 @@ img {
   }
 }
 
-.container.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (max-width: 767px) {
-  .container.header {
-    height: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container.header {
-    height: 80px;
-  }
-}
-
-.menu-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.menu-button .icon-close {
-  display: none;
-}
-
-.menu-button.is-open .icon-close {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
-.menu-button:hover, .menu-button:focus {
-  fill: #2196f3;
-}
-
-.menu-button.is-open:hover .icon-close,
-.menu-button.is-open:focus .icon-close {
-  fill: #2196f3;
+.site-nav .link {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  width: 100%;
+  height: 100%;
+  letter-spacing: 0.02em;
+  color: black;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
+  .site-nav .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.1;
   }
+}
+
+.site-nav .link:hover, .site-nav .link:focus {
+  color: #2196f3;
 }
 
 @media screen and (max-width: 767px) {
@@ -316,30 +284,41 @@ img {
   }
 }
 
-.site-nav .link {
-  position: relative;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2;
-  width: 100%;
-  height: 100%;
-  letter-spacing: 0.02em;
-  color: black;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-button:hover, .menu-button:focus {
+  fill: #2196f3;
+}
+
+.menu-button.is-open:hover .icon-close,
+.menu-button.is-open:focus .icon-close {
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
-  .site-nav .link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-size: 14px;
-    line-height: 1.1;
+  .menu-button {
+    display: none;
   }
-}
-
-.site-nav .link:hover, .site-nav .link:focus {
-  color: #2196f3;
 }
 
 .site-nav .link.current {
@@ -426,6 +405,27 @@ img {
 @media screen and (min-width: 1200px) {
   .contact .link {
     font-size: 14px;
+  }
+}
+
+.container.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .container.header {
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container.header {
+    height: 80px;
   }
 }
 
@@ -1158,6 +1158,32 @@ img {
   height: 44px;
 }
 
+.client .brend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90px;
+  margin: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .client .brend {
+    width: calc((100% - 4 * 15px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client .brend {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client .brend {
+    width: calc((100% - 12 * 15px) / 6);
+  }
+}
+
 .logo-1 {
   width: 46px;
   height: 51px;
@@ -1217,32 +1243,6 @@ img {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-}
-
-.client .brend {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 90px;
-  margin: 15px;
-}
-
-@media screen and (max-width: 767px) {
-  .client .brend {
-    width: calc((100% - 4 * 15px) / 2);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .client .brend {
-    width: calc((100% - 6 * 15px) / 3);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .client .brend {
-    width: calc((100% - 12 * 15px) / 6);
-  }
 }
 
 .client .link {

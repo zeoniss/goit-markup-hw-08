@@ -1,3 +1,18 @@
+.client .brend {
+    display: flex;
+    height: 90px;
+    margin: 15px;
+    @media screen and (max-width: 767px) {
+        width: calc((100% - 4 * 15px) / 2);
+    }
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 6 * 15px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 12 * 15px) / 6);
+    }
+}
+
 .logo-1 {
     width: 46px;
     height: 51px;
@@ -51,21 +66,6 @@
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-}
-
-.client .brend {
-    display: flex;
-    height: 90px;
-    margin: 15px;
-    @media screen and (max-width: 767px) {
-        width: calc((100% - 4 * 15px) / 2);
-    }
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 6 * 15px) / 3);
-    }
-    @media screen and (min-width: 1200px) {
-        width: calc((100% - 12 * 15px) / 6);
-    }
 }
 
 .client .link {
