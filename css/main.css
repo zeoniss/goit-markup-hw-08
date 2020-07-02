@@ -934,18 +934,18 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .section-work {
+  .section-doing {
     display: none;
   }
 }
 
-.section-work {
+.section-doing {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #ffffff;
 }
 
-.section-work .section-title {
+.section-doing .section-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -954,26 +954,26 @@ img {
   letter-spacing: 0.03em;
 }
 
-.work {
+.made {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-left: 0;
 }
 
-.work > .item {
+.made > .item {
   width: calc((100% - 60px) / 3);
 }
 
-.work .item + .item {
+.made .item + .item {
   margin-left: 30px;
 }
 
-.work .item {
+.made .item {
   position: relative;
 }
 
-.section-work .link {
+.section-doing .link {
   width: 100%;
   position: absolute;
   bottom: 0;
