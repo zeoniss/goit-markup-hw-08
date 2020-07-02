@@ -63,7 +63,7 @@
     letter-spacing: 0.06em;
 }
 
-.cards .content {
+.cards .inside {
     flex-grow: 1;
     position: relative;
     padding-top: 20px;
@@ -86,8 +86,8 @@
     }
 }
 
-.cards .link:hover .content::after,
-.cards .linc:focus .content::after {
+.cards .link:hover .inside::after,
+.cards .linc:focus .inside::after {
     opacity: 1;
 }
 
