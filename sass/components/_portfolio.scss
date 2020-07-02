@@ -1,33 +1,8 @@
-.section-portfolio {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: $--primary-white-color;
-    border-top: 1px solid #ececec;
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
-}
-
-.filter-work {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 40px;
-    @media screen and (min-width: 768px) {
-        justify-content: center;
-        margin-bottom: 30px;
-    }
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 50px;
-    }
-}
-
-.filter-work .item+.item {
+.button-filter .item+.item {
     margin-left: 8px;
 }
 
-.filter-work .item {
+.button-filter .item {
     @media screen and (max-width: 767px) {
         margin-bottom: 15px;
     }
@@ -36,7 +11,7 @@
     }
 }
 
-.section-portfolio .filter {
+.portfolio .click {
     padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
@@ -51,5 +26,30 @@
     &:focus {
         background-color: $--accent-color;
         color: $--primary-white-color;
+    }
+}
+
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $--primary-white-color;
+    border-top: 1px solid #ececec;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.button-filter {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
     }
 }

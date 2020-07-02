@@ -1,3 +1,33 @@
+.logo-1 {
+    width: 46px;
+    height: 51px;
+}
+
+.logo-2 {
+    width: 41px;
+    height: 52px;
+}
+
+.logo-3 {
+    width: 42px;
+    height: 43px;
+}
+
+.logo-4 {
+    width: 80px;
+    height: 44px;
+}
+
+.logo-5 {
+    width: 61px;
+    height: 49px;
+}
+
+.logo-6 {
+    width: 89px;
+    height: 47px;
+}
+
 .clients {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -7,6 +37,13 @@
     }
 }
 
+.client {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: -15px;
+}
+
 .clients .section-title {
     margin-bottom: 30px;
     text-align: center;
@@ -14,13 +51,6 @@
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-}
-
-.client {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin: -15px;
 }
 
 .client .brend {
@@ -53,34 +83,4 @@
         border: 1px solid $--accent-color;
         fill: $--accent-color;
     }
-}
-
-.logo-1 {
-    width: 46px;
-    height: 51px;
-}
-
-.logo-2 {
-    width: 41px;
-    height: 52px;
-}
-
-.logo-3 {
-    width: 42px;
-    height: 43px;
-}
-
-.logo-4 {
-    width: 80px;
-    height: 44px;
-}
-
-.logo-5 {
-    width: 61px;
-    height: 49px;
-}
-
-.logo-6 {
-    width: 89px;
-    height: 47px;
 }

@@ -1,4 +1,8 @@
 .hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #474858;
     padding-top: 118px;
     padding-bottom: 118px;
     max-width: 100%;
@@ -7,10 +11,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #474858;
     background-image: linear-gradient( rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero-480.jpg);
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx), screen and (min-resolution: 192dpi) {
         background-image: linear-gradient( rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero-960.jpg);

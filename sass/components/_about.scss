@@ -1,34 +1,3 @@
-.section-detail {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: $--primary-white-color;
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 0;
-    }
-}
-
-.detail {
-    padding-left: 0;
-    margin: -15px;
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-.detail>.item {
-    display: block;
-    margin: 15px;
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 4 * 15px) / 2);
-    }
-    @media screen and (min-width: 1200px) {
-        flex-wrap: nowrap;
-        width: calc((100% - 8 * 15px) / 4);
-    }
-}
-
 .detail .item:not(:last-child) {
     @media screen and (max-width: 767px) {
         margin-bottom: 30px;
@@ -48,6 +17,16 @@
 .icon-antena {
     width: 64px;
     height: 71px;
+}
+
+.section-detail {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $--primary-white-color;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 0;
+    }
 }
 
 .icon-clock {
@@ -74,4 +53,25 @@
     letter-spacing: 0.03em;
     text-align: center;
     text-transform: uppercase;
+}
+
+.detail>.item {
+    display: block;
+    margin: 15px;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 4 * 15px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        width: calc((100% - 8 * 15px) / 4);
+    }
+}
+
+.detail {
+    padding-left: 0;
+    margin: -15px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

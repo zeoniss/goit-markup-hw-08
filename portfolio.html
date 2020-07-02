@@ -19,16 +19,6 @@
           <span class="top-studio">Studio</span>
         </a>
 
-            <button type="button" class="menu-button" data-menu-button aria-expanded="false" aria-controls="menu-container">
-          <svg
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
-          >
-            <use class="icon-menu" href="./images/sprite/form.svg#menu"></use>
-            <use class="icon-cross" href="./images/sprite/form.svg#close"></use>
-          </svg>
-        </button>
             <div class="menu-container" id="menu-container" data-menu>
                 <nav>
                     <ul class="site-nav">
@@ -46,14 +36,16 @@
                     <li class="list post">
                         <a class="link" href="mailto:info@devstudio.com">
                             <svg class="icon-post" aria-label="почта" width="16" height="11">
-                  <use href="./images/sprite.svg#icon-envelope"></use>
+                  <use href="./images/sprite/envelope.svg#icon-envelope"></use>
                 </svg> info@devstudio.com
                         </a>
                     </li>
                     <li class="list phone">
                         <a class="link" href="tel:+380961111111">
                             <svg class="icon-phone" aria-label="телефон" width="10" height="15">
-                  <use href="./images/sprite.svg#icon-phone"></use>
+                  <use
+                    href="./images/sprite/symbol-defs2.svg#icon-smartphone"
+                  ></use>
                 </svg> +38 096 111 11 11
                         </a>
                     </li>
@@ -63,30 +55,30 @@
     </header>
 
     <main>
-        <section class="section-portfolio">
+        <section class="portfolio">
             <div class="container">
                 <h1 class="visually-hidden">наши работы</h1>
 
-                <ul class="filter-work">
+                <ul class="button-filter">
                     <li class="list item">
-                        <button class="filter" type="button">Все</button>
+                        <button class="click" type="button">Все</button>
                     </li>
                     <li class="list item">
-                        <button class="filter" type="button">Веб-сайты</button>
+                        <button class="click" type="button">Веб-сайты</button>
                     </li>
                     <li class="list item">
-                        <button class="filter" type="button">Приложения</button>
+                        <button class="click" type="button">Приложения</button>
                     </li>
                     <li class="list item">
-                        <button class="filter" type="button">Дизайн</button>
+                        <button class="click" type="button">Дизайн</button>
                     </li>
                     <li class="list item">
-                        <button class="filter" type="button">Маркетинг</button>
+                        <button class="click" type="button">Маркетинг</button>
                     </li>
                 </ul>
 
                 <ul class="cards">
-                    <li class="list block shadow">
+                    <li class="list block style">
                         <a class="link" href="">
                             <div class="product">
                                 <img srcset="
@@ -103,7 +95,7 @@
                             </div>
                             <div class="content">
                                 <h2 class="section-title">Технокряк</h2>
-                                <p class="section-text">Веб-сайт</p>
+                                <p class="section-text-color">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
@@ -127,7 +119,7 @@
                                 <h2 class="section-title">
                                     Постер New Orlean vs Golden Star
                                 </h2>
-                                <p class="section-text">Дизайн</p>
+                                <p class="section-text-color">Дизайн</p>
                             </div>
                         </a>
                     </li>
@@ -149,7 +141,7 @@
                             </div>
                             <div class="content">
                                 <h2 class="section-title">Ресторан Seafood</h2>
-                                <p class="section-text">Приложение</p>
+                                <p class="section-text-color">Приложение</p>
                             </div>
                         </a>
                     </li>
@@ -171,7 +163,7 @@
                             </div>
                             <div class="content">
                                 <h2 class="section-title">Проект Prime</h2>
-                                <p class="section-text">Маркетинг</p>
+                                <p class="section-text-color">Маркетинг</p>
                             </div>
                         </a>
                     </li>
@@ -193,7 +185,7 @@
                             </div>
                             <div class="content">
                                 <h2 class="section-title">Проект Boxes</h2>
-                                <p class="section-text">Приложение</p>
+                                <p class="section-text-color">Приложение</p>
                             </div>
                         </a>
                     </li>
@@ -215,7 +207,7 @@
                             </div>
                             <div class="content">
                                 <h2 class="section-title">Inspiration has no Borders</h2>
-                                <p class="section-text">Веб-сайт</p>
+                                <p class="section-text-color">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
@@ -230,14 +222,14 @@
                       ./images/007-710.jpg 710w,
                       ./images/007-740.jpg 740w,
                       ./images/007-900.jpg 900w
-                    " src="./images/007-350.jpg" alt="журнал" sizes=" (min-width: 1200px) 370px, (min-width: 768px) 350px, (min-width: 480px) 450px " />
+                    " src="./images/007-350.jpg" alt="магазин" sizes=" (min-width: 1200px) 370px, (min-width: 768px) 350px, (min-width: 480px) 450px " />
                                 <p class="text-hidden">
                                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                 </p>
                             </div>
                             <div class="content">
                                 <h2 class="section-title">Издание Limited Edition</h2>
-                                <p class="section-text">Дизайн</p>
+                                <p class="section-text-color">Дизайн</p>
                             </div>
                         </a>
                     </li>
@@ -252,14 +244,14 @@
                       ./images/008-710.jpg 710w,
                       ./images/008-740.jpg 740w,
                       ./images/008-900.jpg 900w
-                    " src="./images/008-350.jpg" alt="этикетка" sizes=" (min-width: 1200px) 370px, (min-width: 768px) 350px, (min-width: 480px) 450px " />
+                    " src="./images/008-350.jpg" alt="лэйбл" sizes=" (min-width: 1200px) 370px, (min-width: 768px) 350px, (min-width: 480px) 450px " />
                                 <p class="text-hidden">
                                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                 </p>
                             </div>
                             <div class="content">
                                 <h2 class="section-title">Проект LAB</h2>
-                                <p class="section-text">Маркетинг</p>
+                                <p class="section-text-color">Маркетинг</p>
                             </div>
                         </a>
                     </li>
@@ -281,7 +273,7 @@
                             </div>
                             <div class="content">
                                 <h2 class="section-title">Growing Business</h2>
-                                <p class="section-text">Приложение</p>
+                                <p class="section-text-color">Приложение</p>
                             </div>
                         </a>
                     </li>
@@ -292,7 +284,7 @@
 
     <footer class="page-footer">
         <div class="container footer">
-            <div class="part left">
+            <div class="part one">
                 <a class="logo" href="">
             Web
             <span class="bottom-studio">Studio</span>
@@ -308,12 +300,12 @@
           </address>
             </div>
 
-            <div class="part center">
+            <div class="part two">
                 <b class="text">присоединяйтесь</b>
                 <ul class="footer-options">
                     <li class="list">
                         <a class="link" href="">
-                            <svg class="icon-instagram" aria-label="instagram">
+                            <svg class="icon-instagram" aria-label="инстаграм">
                   <use
                     href="./images/sprite/symbol-defs2.svg#icon-Ellipsei"
                   ></use>
@@ -322,7 +314,7 @@
                     </li>
                     <li class="list">
                         <a class="link" href="">
-                            <svg class="icon-twitter" aria-label="tweeter">
+                            <svg class="icon-twitter" aria-label="твитер">
                   <use
                     href="./images/sprite/symbol-defs2.svg#icon-Ellipset"
                   ></use>
@@ -331,7 +323,7 @@
                     </li>
                     <li class="list">
                         <a class="link" href="">
-                            <svg class="icon-facebook" aria-label="facebook">
+                            <svg class="icon-facebook" aria-label="фейсбук">
                   <use
                     href="./images/sprite/symbol-defs2.svg#icon-Ellipsef"
                   ></use>
@@ -340,7 +332,7 @@
                     </li>
                     <li class="list">
                         <a class="link" href="">
-                            <svg class="icon-linkedin" aria-label="ln">
+                            <svg class="icon-linkedin" aria-label="линкедин">
                   <use
                     href="./images/sprite/symbol-defs2.svg#icon-Ellipsein"
                   ></use>
@@ -350,7 +342,7 @@
                 </ul>
             </div>
 
-            <div class="part right">
+            <div class="part three">
                 <b class="text">подписаться на рассылку</b>
                 <form class="subscribe">
                     <input class="subscribe-input" type="email" name="mail" id="email" placeholder="E-mail" />

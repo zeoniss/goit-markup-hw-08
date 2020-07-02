@@ -12,7 +12,7 @@
     }
 }
 
-.footer .center {
+.footer .two {
     @media screen and (max-width: 1199px) {
         margin-bottom: 60px;
     }
@@ -90,7 +90,7 @@
     height: 44px;
 }
 
-.footer .left {
+.footer .one {
     @media screen and (max-width: 1199px) {
         margin-bottom: 60px;
         text-align: center;
@@ -126,7 +126,7 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer .right {
+.footer .three {
     @media screen and (max-width: 1199px) {
         text-align: center;
     }
