@@ -1,4 +1,4 @@
-.section-customers {
+.clients {
     padding-top: 60px;
     padding-bottom: 60px;
     @media screen and (min-width: 1200px) {
@@ -7,23 +7,23 @@
     }
 }
 
-.section-customers .section-title {
+.clients .section-title {
     margin-bottom: 30px;
+    text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
     letter-spacing: 0.03em;
 }
 
-.customers {
+.client {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
     margin: -15px;
 }
 
-.customers .brend {
+.client .brend {
     display: flex;
     height: 90px;
     margin: 15px;
@@ -38,14 +38,14 @@
     }
 }
 
-.customers .link {
-    width: 100%;
-    height: 100%;
+.client .link {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    width: 100%;
+    height: 100%;
     fill: #afb1b8;
     transition: border 250ms $--timing-function, fill 250ms $--timing-function;
     &:hover,
@@ -55,32 +55,32 @@
     }
 }
 
-.icon-logo-1 {
-    width: 44px;
-    height: 49px;
+.logo-1 {
+    width: 46px;
+    height: 51px;
 }
 
-.icon-logo-2 {
-    width: 40px;
+.logo-2 {
+    width: 41px;
     height: 52px;
 }
 
-.icon-logo-3 {
-    width: 41px;
+.logo-3 {
+    width: 42px;
     height: 43px;
 }
 
-.icon-logo-4 {
+.logo-4 {
     width: 80px;
-    height: 42px;
+    height: 44px;
 }
 
-.icon-logo-5 {
-    width: 59px;
-    height: 47px;
+.logo-5 {
+    width: 61px;
+    height: 49px;
 }
 
-.icon-logo-6 {
+.logo-6 {
     width: 89px;
-    height: 46px;
+    height: 47px;
 }
