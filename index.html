@@ -74,57 +74,53 @@
             <button class="hero-button open" type="button" data-modal-open>
           Заказать услугу
         </button>
-            <div class="backdrop is-hidden" data-backdrop>
+            <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <form class="form" autocomplete="off">
                         <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
 
                         <div class="form-field">
-                            <input type="text" class="form-input" name="data-contacts" id="person" placeholder=" " />
+                            <input id="person" type="text" class="modal-input" name="name" placeholder=" " />
                             <label for="person" class="form-label">Имя</label>
-                            <svg class="form-icon" width="18" height="18">
+                            <svg class="icon-modal" width="18" height="18">
                   <use href="./images/form.svg#person"></use>
                 </svg>
                         </div>
-
                         <div class="form-field">
-                            <input type="tel" class="form-input" name="tel" id="tel" placeholder=" " />
-                            <label for="tel" class="form-label">Телефон</label>
-                            <svg class="form-icon" width="18" height="18">
+                            <input id="phone" type="text" class="modal-input" name="phone" placeholder=" " />
+                            <label for="phone" class="form-label">Телефон</label>
+                            <svg class="icon-modal" width="18" height="18">
                   <use href="./images/form.svg#phone"></use>
                 </svg>
                         </div>
                         <div class="form-field">
-                            <input type="text" class="form-input" name="mail" id="email" placeholder=" " />
+                            <input id="email" type="text" class="modal-input tel" name="email" placeholder=" " />
                             <label for="email" class="form-label">Почта</label>
-                            <svg class="form-icon" width="18" height="18">
+                            <svg class="icon-modal" width="18" height="18">
                   <use href="./images/form.svg#email"></use>
                 </svg>
                         </div>
-
-                        <div class="form-field">
-                            <textarea name="data-contacts" id="textarea" rows="6" class="form-coment" placeholder="  "></textarea>
-                            <label for="textarea" class="form-textarea">
-                  Комментарий
-                </label>
+                        <div class="form-field coments">
+                            <textarea name="coment" id="textarea" rows="5" class="textarea" placeholder="  "></textarea>
+                            <label for="textarea" class="textarea-label">Комментарий</label>
                         </div>
+
                         <div class="terms-field">
                             <label class="label-checkbox">
                   <input
                     type="checkbox"
                     name="checkbox"
-                    checked
                     class="input-checkbox"
                   />
                   <span class="icon-checkbox"></span>
-
                   Соглашаюсь с рассылкой и принимаю
-                  <a href="#" class="linked terms">Условия договора</a>
+
+                  <a href="#" class="link terms">Условия договора</a>
                 </label>
                         </div>
                         <button type="submit" class="button-submit">Отправить</button>
                     </form>
-                    <button data-modal-close class="modal-button">
+                    <button data-modal-close class="modal-btn">
               <svg class="icon-close" width="18" height="18">
                 <use href="./images/form.svg#close"></use>
               </svg>
@@ -580,6 +576,5 @@
     <script src="./sass/js/menu.js"></script>
     <script src="./sass/js/modal.js"></script>
 </body>
-
 
 </html>
