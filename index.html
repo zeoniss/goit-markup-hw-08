@@ -563,20 +563,9 @@
             </div>
         </div>
     </footer>
-    <script>
-        const refs = {
-            openModalBtn: document.querySelector('[data-modal-open]'),
-            closeModalBtn: document.querySelector('[data-modal-close]'),
-            backdrop: document.querySelector('[data-backdrop]'),
-        }
+    <script src="./js/menu.js"></script>
 
-        refs.openModalBtn.addEventListener('click', toggleModal)
-        refs.closeModalBtn.addEventListener('click', toggleModal)
-
-        function toggleModal() {
-            refs.backdrop.classList.toggle('is-hidden')
-        }
-    </script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
